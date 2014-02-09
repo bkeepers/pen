@@ -96,7 +96,7 @@
 .pen.hinted h4:before,
 .pen.hinted h5:before,
 .pen.hinted h6:before,
-.pen.hinted blockquote:before,
+/*.pen.hinted blockquote:before,*/
 .pen.hinted hr:before {
   color: #eee;
   position: absolute;
@@ -106,10 +106,10 @@
 }
 .pen.hinted blockquote {  border-left: 0; margin-left: 0; padding-left: 0; }
 .pen.hinted blockquote:before {
-  color: #1abf89;
+  color: #ccc;
   content: ">";
   font-weight: bold;
-  vertical-align: center;
+  padding-right: 10px;
 }
 .pen.hinted h1:before { content: "#";}
 .pen.hinted h2:before { content: "##";}
@@ -136,8 +136,9 @@
   width: 1.2em;
 }
 
-.pen.hinted b:before, .pen.hinted b:after { content: "**"; color: #eee; font-weight: normal; }
-.pen.hinted i:before, .pen.hinted i:after { content: "*"; color: #eee; }
+.pen.hinted b:before, .pen.hinted b:after { content: "**"; color: #ddd; font-weight: normal; }
+.pen.hinted i:before, .pen.hinted i:after { content: "*"; color: #ddd; }
+.pen.hinted p > code:before, .pen.hinted p > code:after { content: "`"; color: #ccc; }
 
 .pen.hinted a { text-decoration: none; }
 .pen.hinted a:before {content: "["; color: #ddd; }
